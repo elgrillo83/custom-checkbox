@@ -1,7 +1,10 @@
 /* NOTE: Following https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accesible-checkboxes */
 
-input[type="checkbox"] {
-  position: absolute;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 input[type="checkbox"] + label {
