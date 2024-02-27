@@ -27,9 +27,12 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
   background: black;
+  /* NOTE: Using the SVG checkmark */
+  background-image: url(checkmark.svg);
 }
 
-input[type="checkbox"]:checked + label::after {
+/* NOTE: Or, using the CSS checkmark */
+/* input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -39,7 +42,7 @@ input[type="checkbox"]:checked + label::after {
   height: 7px;
   width: 12px;
   transform: rotate(-45deg);
-}
+} */
 
 input[type="checkbox"]:focus + label::before {
   outline: blue solid 2px;
