@@ -5,7 +5,8 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
   padding: 0 1.5rem;
 }
